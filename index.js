@@ -23,5 +23,5 @@ app.get('/hello', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Mingdao Logger Backend Started On Port ${port}`);
+    console.log(`Mingdao Logger Backend Started On Port ${process.env.PORT || port}`);
 })
