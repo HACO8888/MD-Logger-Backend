@@ -2,7 +2,6 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const port = 3000;
 
 require('dotenv').config()
 
@@ -24,6 +23,6 @@ app.get('/hello', (req, res) => {
     res.send('Hello World!');
 });
 
-app.listen(port, () => {
-    console.log(`Mingdao Logger Backend Started On Port ${process.env.PORT || port}`);
+app.listen(port, "0.0.0.0", () => {
+    console.log(`Mingdao Logger Backend Started On Port ${process.env.PORT}`);
 })
