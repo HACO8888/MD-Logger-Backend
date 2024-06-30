@@ -23,6 +23,6 @@ app.get('/hello', (req, res) => {
     res.send('Hello World!');
 });
 
-app.listen(port, "0.0.0.0", () => {
+app.listen(process.env.PORT, "0.0.0.0", () => {
     console.log(`Mingdao Logger Backend Started On Port ${process.env.PORT}`);
 })
